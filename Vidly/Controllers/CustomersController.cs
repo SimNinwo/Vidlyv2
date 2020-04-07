@@ -28,6 +28,7 @@ namespace Vidly.Controllers
             var membershipTypes = _context.MembershipTypes.ToList();
             var viewModel = new CustomerFormViewModel
             {
+                Customer = new Customer(),
                 MembershipTypes = membershipTypes
             };
 
@@ -38,6 +39,17 @@ namespace Vidly.Controllers
         public ActionResult Save(Customer customer) // bind form data to Customer
         //(updateCustomerDto Customer ) // data structure that simply contains prop to update from views
         {
+            if (!ModelState.IsValid)
+            {
+                var viewModel = new CustomerFormViewModel 
+                { 
+                    Customer = customer,
+                    MembershipTypes = _context.MembershipTypes.ToList()
+                };
+
+                return View("CustomerForm", viewModel);
+            }
+
             if (customer.Id == 0)
                 _context.Customers.Add(customer);
             else
