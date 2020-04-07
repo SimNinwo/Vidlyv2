@@ -23,7 +23,6 @@ namespace Vidly.Models
         [Display(Name = "Number in Stock")]
         public int NumberInStock { get; set; }
 
-        [Required]
         public Genre Genre { get; set; }
 
         [Display(Name = "Genre")]

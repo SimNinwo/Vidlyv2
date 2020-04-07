@@ -7,6 +7,7 @@ using Vidly.Migrations;
 using Vidly.Models;
 using Vidly.ViewModels;
 using System.Data.Entity;
+using System.Data.Entity.Validation;
 
 namespace Vidly.Controllers
 {
@@ -52,10 +53,14 @@ namespace Vidly.Controllers
                 movieInDb.GenreId = movie.GenreId;
                 movieInDb.NumberInStock = movie.NumberInStock;
             }
+            
+                _context.SaveChanges();
+            
+                //Console.WriteLine(e);
+            
+            
 
-            _context.SaveChanges();
-
-            return RedirectToAction("Index", "Movie");
+            return RedirectToAction("Index", "Movies");
         }
 
         public ActionResult Edit(int id)
