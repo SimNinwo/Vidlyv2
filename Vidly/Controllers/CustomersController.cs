@@ -36,6 +36,7 @@ namespace Vidly.Controllers
         }
 
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public ActionResult Save(Customer customer) // bind form data to Customer
         //(updateCustomerDto Customer ) // data structure that simply contains prop to update from views
         {

@@ -21,7 +21,8 @@ namespace Vidly.Models
         public DateTime DateAdded { get; set; }
         
         [Display(Name = "Number in Stock")]
-        public int NumberInStock { get; set; }
+        [Range(1, 20)]
+        public byte NumberInStock { get; set; }
 
         public Genre Genre { get; set; }
 
