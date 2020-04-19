@@ -66,11 +66,7 @@ namespace Vidly.Controllers.Api
             if (customerInDb == null)
                 throw new HttpResponseException(HttpStatusCode.NotFound);
 
-            Mapper.Map<CustomerDto, Customer>(customerDto, customerInDb);
-            customerInDb.Name = customerDto.Name;
-            customerInDb.BirthDate = customerDto.BirthDate;
-            customerInDb.IsSubscribedToNewsletter = customerDto.IsSubscribedToNewsletter;
-            customerInDb.MembershipTypeId = customerDto.MembershipTypeId;
+            Mapper.Map(customerDto, customerInDb);
 
             _context.SaveChanges();
         }
