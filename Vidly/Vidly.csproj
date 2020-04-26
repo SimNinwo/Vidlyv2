@@ -277,9 +277,9 @@
     <Compile Include="Migrations\202004261913130_AddRental.Designer.cs">
       <DependentUpon>202004261913130_AddRental.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202004261914385_AddNUmberAvailableToMovie.cs" />
-    <Compile Include="Migrations\202004261914385_AddNUmberAvailableToMovie.Designer.cs">
-      <DependentUpon>202004261914385_AddNUmberAvailableToMovie.cs</DependentUpon>
+    <Compile Include="Migrations\202004261938378_AddNUmberAvailableToMovie.cs" />
+    <Compile Include="Migrations\202004261938378_AddNUmberAvailableToMovie.Designer.cs">
+      <DependentUpon>202004261938378_AddNUmberAvailableToMovie.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -606,8 +606,8 @@
     <EmbeddedResource Include="Migrations\202004261913130_AddRental.resx">
       <DependentUpon>202004261913130_AddRental.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202004261914385_AddNUmberAvailableToMovie.resx">
-      <DependentUpon>202004261914385_AddNUmberAvailableToMovie.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202004261938378_AddNUmberAvailableToMovie.resx">
+      <DependentUpon>202004261938378_AddNUmberAvailableToMovie.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
