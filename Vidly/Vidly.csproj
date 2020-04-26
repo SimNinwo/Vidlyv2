@@ -247,6 +247,14 @@
     <Compile Include="Migrations\202004251522097_SeedUsers.Designer.cs">
       <DependentUpon>202004251522097_SeedUsers.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202004251553027_AddDrivingLicenseToApplicationUser.cs" />
+    <Compile Include="Migrations\202004251553027_AddDrivingLicenseToApplicationUser.Designer.cs">
+      <DependentUpon>202004251553027_AddDrivingLicenseToApplicationUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202004260901145_AddPhoneToApplicationUser.cs" />
+    <Compile Include="Migrations\202004260901145_AddPhoneToApplicationUser.Designer.cs">
+      <DependentUpon>202004260901145_AddPhoneToApplicationUser.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -259,8 +267,10 @@
     <Compile Include="Models\RoleName.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
+    <Compile Include="ViewModels\ExternalLoginConfirmationViewModel.cs" />
     <Compile Include="ViewModels\NewCustomerViewModels.cs" />
     <Compile Include="ViewModels\MovieFormViewModel.cs" />
+    <Compile Include="ViewModels\RegisterViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap-theme.css" />
@@ -558,6 +568,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202004251522097_SeedUsers.resx">
       <DependentUpon>202004251522097_SeedUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202004251553027_AddDrivingLicenseToApplicationUser.resx">
+      <DependentUpon>202004251553027_AddDrivingLicenseToApplicationUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202004260901145_AddPhoneToApplicationUser.resx">
+      <DependentUpon>202004260901145_AddPhoneToApplicationUser.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
